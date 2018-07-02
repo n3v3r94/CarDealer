@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>aspnet-CarDealer.Wep-50886D48-2455-48D7-9C09-446DA8E8E7C6</UserSecretsId>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.2" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CarDealer.Data\CarDealer.Data.csproj" />
+    <ProjectReference Include="..\CarDealer.Services\CarDealer.Services.csproj" />
+  </ItemGroup>
+
+</Project>
